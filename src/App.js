@@ -11,9 +11,6 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import { FaPhone, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-import slide1 from './images/slide1.png';
-import slide2 from './images/slide2.png';
-import slide3 from './images/slide3.png';
 import logo from './images/logo.png';
 
 function App() {
@@ -26,20 +23,20 @@ function App() {
 
   const slides = [
     {
-      src: slide1,
+      src: "https://i.postimg.cc/KzQYdPRW/slide1.png",
       label: "Learn new things",
       label1: "To explore daily",
       caption: "Get free access to different tech contents",
       caption1: "from top nationwide professionals."
     },
     {
-      src: slide2,
+      src: "https://i.postimg.cc/mrLyxGj2/slide2.png",
       label: "Join weekly tasks",
       label1: "To stand out ",
       caption: "Complete weekly tasks to be a standout performer."
     },
     {
-      src: slide3,
+      src: "https://i.postimg.cc/WpkrH3Vw/slide3.png",
       label: "Read daily blogs &",
       label1: "Keep in touch",
       caption: "Give a shoutout to the daily newsfeeds &.",
@@ -299,6 +296,71 @@ function App() {
             <MdOutlineRadioButtonChecked size={30} />
           </button>
         </div>
+      </div>
+      <div className='teacher'>
+        <p>Tech Talks</p>
+        <h4>Professor's Corner</h4>
+        <center>
+          <div className='teacher-section'>
+            <div className='teacher-details'>
+              <img src = "https://i.postimg.cc/zDxQn2P9/Whats-App-Image-2024-08-04-at-13-56-19-b824ef4b.jpg" alt = "name" />
+              <div className='back'></div>
+            </div>
+            <h3>" This section is dedicated to the teacher to speak on some technical features related to the association which is to be added later including his own thoughts, mission, vission & retrospection on CSI BCREC."</h3>
+          </div>
+        </center>
+      </div>
+      <div className='team'>
+        <p>Meet Our Team</p>
+        <h4>Member's Association</h4>
+        <center>
+          <div className='team-box'>
+            <div className='member'>
+              <img src = "https://i.postimg.cc/CLz4W2Bj/Whats-App-Image-2024-05-05-at-12-24-45-48b18bab.jpg" alt = "name" />
+              <div>
+                <h2>Abir Mukherjee</h2>
+                <h3>Undergraduate Student</h3>
+              </div>
+              <div>
+                <h4>Chairperson</h4>
+                <p>Department of AIML (CSE)</p>
+              </div>
+            </div>
+            <div className='member'>
+              <img src = "https://i.postimg.cc/CLz4W2Bj/Whats-App-Image-2024-05-05-at-12-24-45-48b18bab.jpg" alt = "name" />
+              <div>
+                <h2>Debjit Bakshi</h2>
+                <h3>Undergraduate Student</h3>
+              </div>
+              <div>
+                <h4>Vice-Chairperson</h4>
+                <p>Department of Information Technology</p>
+              </div>
+            </div>
+            <div className='member'>
+              <img src = "https://i.postimg.cc/CLz4W2Bj/Whats-App-Image-2024-05-05-at-12-24-45-48b18bab.jpg" alt = "name" />
+              <div>
+                <h2>Anish Rudra</h2>
+                <h3>Undergraduate Student</h3>
+              </div>
+              <div>
+                <h4>Secretary</h4>
+                <p>Department of Information Technology</p>
+              </div>
+            </div>
+            <div className='member'>
+              <img src = "https://i.postimg.cc/CLz4W2Bj/Whats-App-Image-2024-05-05-at-12-24-45-48b18bab.jpg" alt = "name" />
+              <div>
+                <h2>Kuntal Banerjee</h2>
+                <h3>Undergraduate Student</h3>
+              </div>
+              <div>
+                <h4>Treasurer</h4>
+                <p>Department of Information Technology</p>
+              </div>
+            </div>
+          </div>
+        </center>
       </div>
       <div className='footer'> 
           <center>

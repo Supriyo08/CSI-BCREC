@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand:wght@300..700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kumbh+Sans:wght@100..900&family=Quicksand:wght@300..700&family=Special+Elite&display=swap');
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #e7e4e4;
+  background-color: #f9f8f8;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -99,10 +100,11 @@ body {
   margin-left: 20px;
   margin-top: 50px;
   letter-spacing: 2px;
+  border-radius: 8px;
   color: white;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  animation: slideUp 3.5s ease-out forwards;
+  animation: slideUp 2.5s ease-out forwards;
 }
 
 .carousel-inner button:hover{
@@ -161,20 +163,20 @@ body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1.5px;
-  animation: slideUp 1.5s ease-out forwards;
+  animation: slideUp 0.5s ease-in-out;
 }
 
 .carousel h3{
   font-size: 100px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  animation: slideUp 2s ease-out forwards;
+  animation: slideUp 1s ease-in-out;
 }
 .carousel h2{
   font-size: 100px;
   margin-top: -110px;
   font-family: 'Montserrat', sans-serif;
-  animation: slideUp 2.5s ease-out forwards;
+  animation: slideUp 1.5s ease-in-out;
 }
 .carousel p{
   font-size: 30px;
@@ -183,13 +185,13 @@ body {
   margin-left: 20px;
   letter-spacing: 2px;
   line-height: 70px;
-  animation: slideUp 3s ease-out forwards;
+  animation: slideUp 2s ease-in-out;
 }
 
 @keyframes slideUp {
   0% {
     opacity: 0;
-    transform: translateY(1000px);
+    transform: translateY(100px);
     behavior: smooth;
   }
   100% {
@@ -233,7 +235,6 @@ body {
 
 .box {
   background-color: white;
-  border: 1px solid #ddd;
   padding: 20px;
   height: 85px;
   width: 320px;
@@ -379,8 +380,143 @@ body {
   font-size: 18px !important;
 }
 
+.teacher{
+  height: 600px;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #171616;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+.teacher h4{
+  font-size: 47px;
+  margin-top: -10px;
+  font-weight: bold !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.teacher-section{
+  width: 80vw;
+  height: 500px;
+  background-color: transparent;
+  display: flex;
+  gap: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.teacher-section img{
+  height: 450px;
+  width: 380px;
+}
+
+.teacher-section h3{
+  font-size: 45px;
+  text-align: left;
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 70px;
+}
+.teacher .back{
+  background-color: rgb(8, 69, 209);
+  height: 400px;
+  width: 400px;
+  margin-top: -350px;
+  margin-left: 100px;
+}
+
+.team{
+  height: 600px;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  color: #171616;
+  text-align: center;
+  margin-top: 300px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.team h4{
+  font-size: 47px;
+  margin-top: -10px;
+  font-weight: bold !important;
+}
+
+.team-box{
+  height: 500px;
+  width: 95vw;
+  background-color: transparent;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.team-box .member{
+  height: 400px;
+  width: 450px;
+  background-color: white;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 5px 5px 8px rgb(210, 206, 206);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.team-box .member:hover{
+  transform: translateY(-10px);
+  background-color: #171616;
+  color: white;
+}
+
+.member img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.member h2{
+  color: rgb(48, 145, 255);
+  font-size: 20px;
+}
+
+.team-box .member:hover .member h2{
+  color: rgb(77, 160, 255) !important;
+}
+
+.member h3{
+  font-size: 20px;
+  margin-top: -10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.member h4{
+  font-size: 20px;
+  background-color: rgb(243, 240, 240);
+  padding: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 8px;
+  color: #686363;
+  margin-top: 50px;
+}
+
+.member p{
+  font-size: 17px;
+  margin-top: 30px;
+  font-weight: 600;
+}
 .footer{
-  margin-top: 100px;
+  margin-top: 300px;
   height: 1000px;
   overflow-x: hidden !important;
   background: url(./images/footer.png);
@@ -509,7 +645,7 @@ body {
   border: none;
   padding: 20px;
   cursor: pointer;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .scroll-to-top:hover {
@@ -560,22 +696,21 @@ body {
   }
 
   .carousel-caption{
-    margin-bottom: 100px;
+    margin-left: -150px;
   }
   .carousel-caption h1{
     margin-left: 0px;
     margin-top: -5px;
-    font-size: 25px;
+    font-size: 45px;
   }
   .carousel-caption h3{
-    font-size: 40px;
+    font-size: 80px;
   }
   .carousel-caption h2{
-    font-size: 40px;
-    padding-top: 70px;
+    font-size: 80px;
+    padding-top: 50px;
   }
   .carousel-caption p{
-    margin-top: 20px;
   }
 
   .box-section{
@@ -610,8 +745,44 @@ body {
     margin-top: 1700px;
   }
 
+  .teacher-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    line-height: 0px !important;
+  }
+
+  .teacher-section h3{
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .team{
+    height: 800px;
+    margin-top: 500px;
+  }
+  .team-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 370px;
+  }
+
+  .team-box .member{
+    width: 800px;
+    display: flex;
+    gap: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .member h4{
+      margin-top: -15px;
+  }
+
   .footer{
     height: 1900px;
+    margin-top: 700px;
   }
   .contact{
     display: flex;
@@ -632,6 +803,10 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 250px;
+  }
+
+  .carousel-buttons.bottom-center button{
+    margin-bottom: 200px;
   }
   
 }
