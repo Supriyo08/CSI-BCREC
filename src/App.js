@@ -11,6 +11,14 @@ import { FaFacebook } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import { FaPhone, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import slide1 from './images/slide1.png';
+import slide2 from './images/slide2.png';
+import slide3 from './images/slide3.png';
+import Surajit from './images/Surajit.jpg';
+import Priyanka from './images/Priyanka.jpg';
+import Sayak from './images/Sayak.jpg';
+import Debjit from './images/Debjit.jpg';
+import KM_Sir from './images/KM_Sir.jpg';
 import logo from './images/logo.png';
 
 function App() {
@@ -23,20 +31,20 @@ function App() {
 
   const slides = [
     {
-      src: "https://i.postimg.cc/KzQYdPRW/slide1.png",
+      src: slide1,
       label: "Learn new things",
       label1: "To explore daily",
       caption: "Get free access to different tech contents",
       caption1: "from top nationwide professionals."
     },
     {
-      src: "https://i.postimg.cc/mrLyxGj2/slide2.png",
+      src: slide2,
       label: "Join weekly tasks",
       label1: "To stand out ",
       caption: "Complete weekly tasks to be a standout performer."
     },
     {
-      src: "https://i.postimg.cc/WpkrH3Vw/slide3.png",
+      src: slide3,
       label: "Read daily blogs &",
       label1: "Keep in touch",
       caption: "Give a shoutout to the daily newsfeeds &.",
@@ -48,19 +56,19 @@ function App() {
     {
       title: "A Proud Leader",
       testimony: "Serving as the Chairperson of the Computer Society of India BCREC was an enriching experience. It honed my leadership skills, deepened my passion for technology and I am proud to have been part of a team that fostered innovation and learning.",
-      imgSrc: 'https://i.postimg.cc/xdcNYjYG/Passport-Size-Photo-Surajit-Bhattacharyya.jpg',
+      imgSrc: Surajit,
       name: "Surajit Bhattacharyya",
       role: "Ex-Chairperson",
 
       title1: "Enriching Journey",
       testimony1: "CSI, a professional body committed to the advancement of Information Technology, can be a pivotal part of your academic journey. The student chapter offers numerous opportunities for skill enhancement through engaging competitions and projects.",
-      imgSrc1: 'https://imgtr.ee/images/2024/08/01/0446952af73bba82d9b56368338fe0c1.jpeg',
+      imgSrc1: Priyanka,
       name1: "Priyanka Roy",
       role1: "Ex-Secretary",
 
       title2: "A Transformative Experience",
       testimony2: "Being the Treasurer of the Computer Society of India BCREC  was a truly transformative experience. Through its diverse range of skill-building opportunities and project management, I enhanced my technical abilities and I grew in confidence.",
-      imgSrc2: 'https://imgtr.ee/images/2024/08/01/325dc446724c94ba230c3de70b848888.jpeg',
+      imgSrc2: Sayak,
       name2: "Sayak Rudra",
       role2: "Ex-Treasurer",
 
@@ -303,7 +311,7 @@ function App() {
         <center>
           <div className='teacher-section'>
             <div className='teacher-details'>
-              <img src = "https://i.postimg.cc/zDxQn2P9/Whats-App-Image-2024-08-04-at-13-56-19-b824ef4b.jpg" alt = "name" />
+              <img src = {KM_Sir} alt = "name" />
               <div className='back'></div>
             </div>
             <h3>" This section is dedicated to the teacher to speak on some technical features related to the association which is to be added later including his own thoughts, mission, vission & retrospection on CSI BCREC."</h3>
@@ -327,7 +335,7 @@ function App() {
               </div>
             </div>
             <div className='member'>
-              <img src = "https://i.postimg.cc/CLz4W2Bj/Whats-App-Image-2024-05-05-at-12-24-45-48b18bab.jpg" alt = "name" />
+              <img src = {Debjit} alt = "name" />
               <div>
                 <h2>Debjit Bakshi</h2>
                 <h3>Undergraduate Student</h3>
