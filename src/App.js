@@ -61,7 +61,7 @@ function App() {
       role: "Ex-Chairperson",
 
       title1: "Enriching Journey",
-      testimony1: "CSI, a professional body committed to the advancement of Information Technology, can be a pivotal part of your academic journey. The student chapter offers numerous opportunities for skill enhancement through engaging competitions and projects.",
+      testimony1: "CSI, a professional body committed to the advancement of Information Technology, can be a pivotal part of your academic journey. It offers numerous opportunities for skill enhancement through engaging competitions and projects.",
       imgSrc1: Priyanka,
       name1: "Priyanka Roy",
       role1: "Ex-Secretary",
@@ -206,8 +206,10 @@ function App() {
                 <h1>Technology for Masses!</h1>
                 <h3>{slide.label}</h3>
                 <h2>{slide.label1}</h2>
-                <p>{slide.caption}</p>
-                <p>{slide.caption1}</p>
+                <div className='headlines'>
+                  <p>{slide.caption}</p>
+                  <p>{slide.caption1}</p>
+                </div>
                 <button onClick={handleClick} className={clicked ? 'clicked' : ''}>
                   DISCOVER MORE
                   <MdExplore className="discover" size={25} style={{ marginTop: "-2px", position: 'absolute', paddingLeft: "5px" }} />
@@ -257,42 +259,44 @@ function App() {
               key={index}
               className={`carousel-item ${index === activeIndex2 ? 'active' : ''}`}
             >
-              <div className="carousel-boxes">
-                <div className="carousel-box">
-                    <p>{slide.title}</p>
-                    <p className='testimony'>{slide.testimony}</p>
-                  <div className='testimonial'>
-                    <img src={slide.imgSrc} alt={slide.name} />
-                    <div className='testimonial-caption'>
-                      <h4>{slide.name}</h4>
-                      <h3>{slide.role}</h3>
+              <center>
+                <div className="carousel-boxes">
+                  <div className="carousel-box">
+                      <p>{slide.title}</p>
+                      <p className='testimony'>{slide.testimony}</p>
+                    <div className='testimonial'>
+                      <img src={slide.imgSrc} alt={slide.name} />
+                      <div className='testimonial-caption'>
+                        <h4>{slide.name}</h4>
+                        <h3>{slide.role}</h3>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="carousel-box">
-                  <p>{slide.title1}</p>
-                  <p className='testimony'>{slide.testimony1}</p>
-                  <div className='testimonial'>
-                    <img src={slide.imgSrc1} alt={slide.name1} />
-                    <div className='testimonial-caption'>
-                      <h4>{slide.name1}</h4>
-                      <h3>{slide.role1}</h3>
+                  <div className="carousel-box">
+                    <p>{slide.title1}</p>
+                    <p className='testimony'>{slide.testimony1}</p>
+                    <div className='testimonial'>
+                      <img src={slide.imgSrc1} alt={slide.name1} />
+                      <div className='testimonial-caption'>
+                        <h4>{slide.name1}</h4>
+                        <h3>{slide.role1}</h3>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="carousel-box">
-                  <p>{slide.title2}</p>
-                  <p className='testimony'>{slide.testimony2}</p>
-                  <div className='testimonial'>
-                    <img src={slide.imgSrc2} alt={slide.name2} />
-                    <div className='testimonial-caption'>
-                      <h4>{slide.name2}</h4>
-                      <h3>{slide.role2}</h3>
+                  <div className="carousel-box">
+                    <p>{slide.title2}</p>
+                    <p className='testimony'>{slide.testimony2}</p>
+                    <div className='testimonial'>
+                      <img src={slide.imgSrc2} alt={slide.name2} />
+                      <div className='testimonial-caption'>
+                        <h4>{slide.name2}</h4>
+                        <h3>{slide.role2}</h3>
+                      </div>
                     </div>
                   </div>
+                  {/* Add more boxes here if needed */}
                 </div>
-                {/* Add more boxes here if needed */}
-              </div>
+              </center>
             </div>
           ))}
         </div>
@@ -311,8 +315,10 @@ function App() {
         <center>
           <div className='teacher-section'>
             <div className='teacher-details'>
-              <img src = {KM_Sir} alt = "name" />
-              <div className='back'></div>
+              <center>
+                <img src = {KM_Sir} alt = "name" />
+                <div className='back'></div>
+              </center>
             </div>
             <h3>" This section is dedicated to the teacher to speak on some technical features related to the association which is to be added later including his own thoughts, mission, vission & retrospection on CSI BCREC."</h3>
           </div>

@@ -178,13 +178,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   animation: slideUp 1.5s ease-in-out;
 }
+.headlines{
+  margin-top: -20px;
+  margin-left: 20px;
+}
 .carousel p{
   font-size: 30px;
-  margin-top: -50px;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 20px;
   letter-spacing: 2px;
-  line-height: 70px;
   animation: slideUp 2s ease-in-out;
 }
 
@@ -328,7 +329,6 @@ body {
   color: rgb(8, 69, 209);
   font-size: 18px;
   font-weight: 600;
-  padding-top: 30px;
   letter-spacing: 1px;
 }
 
@@ -710,8 +710,6 @@ body {
     font-size: 80px;
     padding-top: 50px;
   }
-  .carousel-caption p{
-  }
 
   .box-section{
     display: flex;
@@ -723,9 +721,9 @@ body {
   .carousel-boxes{
     display: flex;
     flex-direction: column;
+    column-gap: -10px !important;
     align-items: center;
     height: 1500px;
-    margin-top: -100px;
     overflow-x: hidden;
   }
 
@@ -733,9 +731,7 @@ body {
     width: 700px;
     margin-top: -20px;
   }
-  .testimonial{
-    justify-content: left;
-  }
+
   #second-carousel{
     width: 100vw !important;
     height: 1800px;
@@ -748,15 +744,20 @@ body {
   .teacher-section{
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 30px;
-    line-height: 0px !important;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .teacher-details{
+    width: 90%;
   }
 
   .teacher-section h3{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 40px;
     text-align: center;
+    width: 85%;
   }
 
   .team{
@@ -812,14 +813,152 @@ body {
 }
 
 @media (max-width: 450px){
-  .carousel-caption{
-    margin-left: -20px;
+  #home img{
+    height: 600px;
   }
-  .navbar nav ul{
-    gap: 80px;
+  .carousel-caption{
+    margin-left: -280px !important;
+    width: 90vw !important;
+    margin-bottom: -150px;
+  }
+  .carousel-caption h1{
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .carousel-caption h3{
+    font-size: 35px;
+  }
+  .carousel-caption h2{
+    font-size: 35px;
+    line-height: 80px;
+  }
+  .carousel-caption p{
+    font-size: 12px;
+  }
+  .headlines{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .navbar h3{
+    font-size: 15px;
+    left: 5px !important;
+  }
+  .navbar{
+    padding: 10px 18px;
+  }
+
+  #second-carousel{
+    height: 1900px;
+    width: 100% !important;
+  }
+
+  #second-carousel button{
+    margin-top: 1800px;
+  }
+
+  #second-carousel h3{
+    font-size: 35px;
+  }
+  
+  #second-carousel h4{
+    margin-top: 100px;
+  }
+
+  .testimonial-caption h4{
+    margin-top: -60px !important;
+    font-size: 18px !important;
   }
   .carousel-box{
-    width: 380px;
+    width: 300px !important;
     padding: 40px;
+  }
+  
+  .carousel-boxes{
+    height: 2000px;
+    margin-top: -200px !important;
+  }
+
+  .testimony{
+    font-size: 15px !important;
+  }
+
+  .carousel-box{
+    width: 280px;
+    padding: 30px !important;
+  }
+
+  .team{
+    margin-top: 300px;
+  }
+
+  .team-box{
+    margin-top: 900px;
+  }
+
+  .member{
+    display: flex;
+    flex-direction: column;
+    width: 250px !important;
+  }
+
+  .member h3{
+    font-size: 17px;
+  }
+
+  .member h4{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .teacher{
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .teacher-section{
+    display: flex;
+    flex-direction: column !important;
+  }
+  .teacher img{
+    height: 250px;
+    width: 200px;
+  }
+  .back{
+    display: none;
+  }
+
+  .footer{
+    height: 1500px;
+    margin-top: 1800px;
+  }
+
+  .footer input{
+    width: 300px;
+  }
+
+  .contact {
+    padding: 10px;
+    gap: 20px;
+  }
+  .contact h1{
+    text-align: left;
+    font-size: 37px;
+  }
+
+  .social-media{
+    margin-top: 150px;
+    gap: 20px;
+  }
+
+  .social-media h2{
+    font-size: 25px;
+  }
+
+  .social-media p{
+    font-size: 15px;
+  }
+
+  .copyright p{
+    font-size: 15px !important;
   }
 }
