@@ -813,6 +813,11 @@ body {
 }
 
 @media (max-width: 450px){
+
+  body{
+    overflow-x: hidden;
+  }
+
   #home img{
     height: 600px;
   }
@@ -918,6 +923,7 @@ body {
   .teacher-section{
     display: flex;
     flex-direction: column !important;
+    margin-top: 100px !important;
   }
   .teacher img{
     height: 250px;
